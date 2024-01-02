@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    tools:context=".Menu.Laporan_Kebakaran">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#eeeeee"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <View
+            android:id="@+id/vectorback"
+            android:layout_width="21.88dp"
+            android:layout_height="21.32dp"
+            android:background="@drawable/back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/laporan_keb"
+            app:layout_constraintHorizontal_bias="0.300"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.042" />
+
+        <TextView
+            android:id="@+id/laporan_keb"
+            android:layout_width="182dp"
+            android:layout_height="27dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center_horizontal|top"
+            android:text="Laporan Kebakaran"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.040" />
+
+        <View
+            android:id="@+id/rectangle_2"
+            android:layout_width="344dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="90dp"
+            android:background="@drawable/info"
+            android:elevation="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        <RelativeLayout
+            android:id="@+id/layout"
+            android:layout_width="335dp"
+            android:layout_height="830dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="135dp"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/unggah_foto"
+                android:layout_width="203dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="132dp"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center_horizontal|top"
+                android:text="Unggah Foto Bukti Laporan"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="295dp"
+                android:layout_height="127dp"
+                android:layout_below="@+id/unggah_foto"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/unggah"
+                android:clickable="true"
+                android:onClick="onUploadFotoClick" />
+
+
+            <TextView
+                android:id="@+id/jenis"
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="216dp"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center_horizontal|top"
+                android:text="Jenis Laporan"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/jenisLaporan"
+                android:layout_width="297dp"
+                android:layout_height="43dp"
+                android:layout_below="@id/jenis"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Masukan Jenis Laporan"
+                android:inputType="text"
+                android:paddingStart="4dp"
+                android:paddingTop="15dp"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:backgroundTint="#85D6FF"
+                android:tag="inputPelapor" />
+
+            <TextView
+                android:id="@+id/inputPelapor"
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/jenisLaporan"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="216dp"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center_horizontal|top"
+                android:text="Nama Pelapor"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/pelapor"
+                android:layout_width="297dp"
+                android:layout_height="43dp"
+                android:layout_below="@id/inputPelapor"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Masukan nama"
+                android:inputType="text"
+                android:paddingStart="4dp"
+                android:paddingTop="15dp"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:backgroundTint="#85D6FF"
+                android:tag="inputPelapor" />
+
+            <TextView
+                android:id="@+id/ntelepon"
+                android:layout_width="122dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pelapor"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="202dp"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center_horizontal|top"
+                android:text="Telepon Pelapor"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/inputNomor"
+                android:layout_width="297dp"
+                android:layout_height="43dp"
+                android:layout_below="@id/ntelepon"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Masukan nomor telepon"
+                android:backgroundTint="#85D6FF"
+                android:inputType="text"
+                android:paddingStart="4dp"
+                android:paddingTop="15dp"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:tag="inputNomor"/>
+
+            <TextView
+                android:id="@+id/kejadian"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputNomor"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="204dp"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center_horizontal|top"
+                android:text="Lokasi Kejadian"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/inputKejadian"
+                android:layout_width="297dp"
+                android:layout_height="43dp"
+                android:layout_below="@id/kejadian"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:backgroundTint="#85D6FF"
+                android:ems="10"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Masukan lokasi kejadian"
+                android:inputType="text"
+                android:paddingStart="4dp"
+                android:paddingTop="15dp"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:tag="inputKejadian" />
+
+            <TextView
+                android:id="@+id/tanggal"
+                android:layout_width="131dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputKejadian"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="192dp"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center_horizontal|top"
+                android:text="Tanggal Kejadian"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/tanggal_kejadian"
+                android:layout_width="297dp"
+                android:layout_height="43dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:textSize="13sp"
+                android:backgroundTint="#85D6FF"
+                android:hint="Masukkan Tanggal"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/black"
+                android:layout_below="@+id/tanggal"
+                android:focusable="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:tag="tgllahir"/>
+
+            <TextView
+                android:id="@+id/isi"
+                android:layout_width="81dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tanggal_kejadian"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="220dp"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center_horizontal|top"
+                android:text="Isi Laporan"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/txtMultiLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/isi"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/rounded_edittext_border"
+                android:ems="10"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="start|top"
+                android:hint="Isi laporan"
+                android:inputType="textMultiLine"
+                android:paddingStart="20dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="50dp"
+                android:tag="txtMultiLine"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/button_forgot"
+                android:layout_width="282dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/txtMultiLine"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/button_background"
+                android:backgroundTint="#85D6FF"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Kirim"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

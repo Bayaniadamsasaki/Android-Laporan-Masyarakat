@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Laporan Masyarakat</string>
+    <string name="deskripsi_menu">Laporan jika terjadi keadaan darurat, instansi terdekat akan segera sampai di sana. </string>
+
+    <string name="deskripsi">Aplikasi laporan masyarakat adalah perangkat lunak yang memungkinkan warga
+        untuk melaporkan masalah atau kejadian penting kepada instansi melalui platform digital,
+        seperti perangkat seluler untuk memfasilitasi respons cepat dan efisien terhadap situasi yang dilaporkan.
+    </string>
+</resources>

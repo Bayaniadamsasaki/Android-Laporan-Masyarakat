@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/laporan_pen"
+        android:layout_width="302dp"
+        android:layout_height="27dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Laporan Pengaduan Masyarakat"
+        android:gravity="center_horizontal|top"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.036" />
+
+    <TextView
+        android:id="@+id/laporan_jik"
+        android:layout_width="302dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal|top"
+        android:text="@string/deskripsi_menu"
+        android:textSize="13sp"
+        android:fontFamily="@font/poppins_regular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/laporan_pen" />
+
+    <View
+        android:id="@+id/kebakaran"
+        android:layout_width="334dp"
+        android:layout_height="136dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/kebakaran"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/laporan_jik" />
+
+    <View
+        android:id="@+id/medis"
+        android:layout_width="334dp"
+        android:layout_height="136dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/medis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kebakaran" />
+
+    <View
+        android:id="@+id/bencana"
+        android:layout_width="334dp"
+        android:layout_height="136dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bencana_alam"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/medis" />
+
+    <View
+        android:id="@+id/riwayat"
+        android:layout_width="334dp"
+        android:layout_height="136dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/riwayat_laporan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bencana" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1083464962941",
+    "project_id": "laporan-masyarakat-pmo",
+    "storage_bucket": "laporan-masyarakat-pmo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1083464962941:android:4d58efb07c0d971837b214",
+        "android_client_info": {
+          "package_name": "pmo.sample.app.laporanmasyarakat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1083464962941-3fl3nmg3ko3kh7t87bmb21lk0jfoiee5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9htq-WiWi7RD9SyyRAmon6TTvVMZSWPk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1083464962941-3fl3nmg3ko3kh7t87bmb21lk0jfoiee5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
